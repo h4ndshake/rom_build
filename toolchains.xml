@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<project name="DespairFactor/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-despair" remote="bucket" />
+	<project name="DespairFactor/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-despair" remote="bucket" />
+</manifest>
