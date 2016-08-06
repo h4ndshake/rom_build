@@ -8,7 +8,7 @@ local_dir=$PWD
 defconfig=msm8960dt_mmi_defconfig
 jobs=4
 AnyKernel_folder=~/Development/AnyKernel
-KERNEL=3.4.105-XPerience-08x
+KERNEL=Kernel_ColorCalibration
 
 ###### defines ######
 
