@@ -8,7 +8,7 @@ local_dir=$PWD
 defconfig=msm8960dt_mmi_defconfig
 jobs=4
 AnyKernel_folder=~/Development/AnyKernel
-KERNEL=XPerience-07x
+KERNEL=Kernel_ColorCalibration
 
 ###### defines ######
 
@@ -24,14 +24,13 @@ echo '#############'
 make clean                                                           # clean the sources
 rm -rf out
 rm $AnyKernel_folder/$KERNEL.zip                                     # clean the output folder
-rm $AnyKernel_folder/modules/*
 rm $AnyKernel_folder/zImage
 echo ''
 echo '#############'
 echo 'Setting Up'
 echo '#############'
 export ARCH=arm
-export CROSS_COMPILE=~/Development/arm-eabi-5.x/bin/arm-eabi-
+export CROSS_COMPILE=~/Development/arm-eabi-4.9/bin/arm-eabi-
 make $defconfig
 echo ''
 echo '#############'
