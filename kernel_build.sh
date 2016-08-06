@@ -24,6 +24,7 @@ echo '#############'
 make clean                                                           # clean the sources
 rm -rf out
 rm $AnyKernel_folder/$KERNEL.zip                                     # clean the output folder
+rm $AnyKernel_folder/modules/* 
 rm $AnyKernel_folder/zImage
 echo ''
 echo '#############'
