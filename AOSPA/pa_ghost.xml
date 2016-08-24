@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-	<remove-project name="android_vendor_pa"/>
-	<project name="Rahh1112/android_vendor_pa" path="vendor_pa" remote="github" revision="marshmallow-caf"/>
-</manifest>
