@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="bucket"
-	  fetch="https://bitbucket.org"
-    revision="master" />
+	<remote name="bucket"
+	fetch="https://bitbucket.org"
+	revision="master" />
 
-  <!-- Toolchains -->
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+	<!-- Toolchains -->
+	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-  <project name="DespairFactor/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bucket" />
-	<project name="DespairFactor/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi" remote="bucket" />
+	<project name="DespairFactor/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bucket" />
+	<project name="DespairFactor/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="bucket" />
 
-  <!-- Build with Optimized flags -->
-  <remove-project name="CyanogenMod/android_build" />
-  <project name="CyanogenMod/android_build" path="build" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+	<!-- Build with Optimized flags -->
+	<remove-project name="CyanogenMod/android_build" />
+	<project name="CyanogenMod/android_build" path="build" >
+		<copyfile src="core/root.mk" dest="Makefile" />
+	</project>
 
-  <!-- ghost -->
-  <project name="XPerience-AOSP-Lollipop/android_kernel_motorola_ghost-OLD" path="kernel/motorola/ghost" remote="github" revision="xpe-10.0" />
-  <project name="Rahh1112/android_device_motorola_ghost" path="device/motorola/ghost" remote="github"/>
-  <project name="XPerience-AOSP-Lollipop/android_device_motorola_msm8960dt-common" path="device/motorola/msm8960dt-common" remote="github" revision="xpe-10.0" />
-  <project name="Rahh1112/proprietary_vendor_motorola_ghost" path="vendor/motorola" remote="github" revision="cm-13.0" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
-  <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="cm-13.0" remote="github"/>
+	<!-- ghost -->
+	<project name="XPerience-AOSP-Lollipop/android_kernel_motorola_ghost-OLD" path="kernel/motorola/ghost" remote="github" revision="xpe-10.0" />
+	<project name="Rahh1112/android_device_motorola_ghost" path="device/motorola/ghost" remote="github"/>
+	<project name="Rahh1112/android_device_motorola_msm8960dt-common" path="device/motorola/msm8960dt-common" remote="github" revision="xpe-10.0" />
+	<project name="Rahh1112/proprietary_vendor_motorola_ghost" path="vendor/motorola" remote="github" revision="cm-13.0" />
+	<project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
+	<project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="cm-13.0" remote="github"/>
 	<project name="CyanogenMod/android_external_stlport" path="external/stlport" revision="cm-13.0" remote="github" />
 </manifest>
