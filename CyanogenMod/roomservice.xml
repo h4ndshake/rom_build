@@ -10,12 +10,6 @@
 	<project name="DespairFactor/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bucket" />
 	<project name="DespairFactor/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="bucket" />
 
-	<!-- Build with Optimized flags -->
-	<remove-project name="CyanogenMod/android_build" />
-	<project name="CyanogenMod/android_build" path="build" >
-		<copyfile src="core/root.mk" dest="Makefile" />
-	</project>
-
 	<!-- ghost -->
 	<project name="XPerience-AOSP-Lollipop/android_kernel_motorola_ghost-OLD" path="kernel/motorola/ghost" remote="github" revision="xpe-10.0" />
 	<project name="Rahh1112/android_device_motorola_ghost" path="device/motorola/ghost" remote="github"/>
