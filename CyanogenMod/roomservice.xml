@@ -7,8 +7,8 @@
 	<!-- Toolchains -->
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-	<project name="DespairFactor/arm-eabi-5.x" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.x" remote="bucket" />
-	<project name="DespairFactor/arm-linux-androideabi-5.x" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x" remote="bucket" />
+	<project name="DespairFactor/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="bucket" />
+	<project name="DespairFactor/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="bucket" />
 
 	<!-- Build with Optimized flags -->
 	<remove-project name="CyanogenMod/android_build" />
