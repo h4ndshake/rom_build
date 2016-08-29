@@ -12,7 +12,7 @@
 
 	<!-- Build with Optimized flags -->
 	<remove-project name="CyanogenMod/android_build" />
-	<project name="CyanogenMod/android_build" path="build" >
+	<project name="Rahh1112/android_build" path="build" revision="cm-13.0" >
 		<copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 
