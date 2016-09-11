@@ -4,6 +4,12 @@
 	fetch="https://bitbucket.org"
 	revision="master" />
 
+	<!-- Torch Fix -->
+	<remove-project name="CyanogeMmod/android_frameworks_av" />
+	<remove-project name="CyanogeMmod/android_frameworks_base" />
+	<project name="tycoo/android_frameworks_av" path="frameworks/av" revision="torch_cm-13.0" />
+	<project name="tycoo/android_frameworks_base" path="frameworks/base" revision="torch_cm-13.0" />
+
 	<!-- Toolchains -->
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
