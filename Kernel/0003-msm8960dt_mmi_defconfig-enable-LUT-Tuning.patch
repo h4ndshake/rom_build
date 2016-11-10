@@ -1,0 +1,24 @@
+From a0cef085f0c1288bc09f5397b77d4f6de9fb0c3a Mon Sep 17 00:00:00 2001
+From: Rafael Julio <Rafael_Julio11@hotmail.com>
+Date: Thu, 10 Nov 2016 13:53:50 -0200
+Subject: [PATCH 3/3] msm8960dt_mmi_defconfig: enable LUT Tuning
+
+---
+ arch/arm/configs/msm8960dt_mmi_defconfig | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm/configs/msm8960dt_mmi_defconfig b/arch/arm/configs/msm8960dt_mmi_defconfig
+index f97a7c4..1d6a76c 100644
+--- a/arch/arm/configs/msm8960dt_mmi_defconfig
++++ b/arch/arm/configs/msm8960dt_mmi_defconfig
+@@ -2635,6 +2635,7 @@ CONFIG_FB_MSM_TVOUT_NONE=y
+ CONFIG_FB_MSM_DEFAULT_DEPTH_RGBA8888=y
+ # CONFIG_FB_MSM_EBI2_EPSON_S1D_QVGA_PANEL is not set
+ # CONFIG_FB_MSM_EBI2_PANEL_DETECT is not set
++CONFIG_FB_MSM_MSMFB_KCAL=y
+ # CONFIG_FB_MSM_QUICKDRAW is not set
+ # CONFIG_EXYNOS_VIDEO is not set
+ CONFIG_BACKLIGHT_LCD_SUPPORT=y
+-- 
+2.7.4
+
